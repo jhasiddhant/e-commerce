@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,300&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -7,7 +6,7 @@
 }
 
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .navbar{
@@ -33,11 +32,11 @@ nav ul li{
 
 a{
     text-decoration: none;
-    color: #555;
+    color: darkslategrey;
 }
 
 p{
-    color: #555;
+    color: darkslategrey;
 }
 
 .container{
@@ -72,7 +71,7 @@ p{
 
 .btn{
     display: inline-block;
-    background: #ff523b;
+    background: #3b69ff;
     color: #fff;
     padding: 8px 30px;
     margin: 30px 0;
@@ -85,7 +84,7 @@ p{
 }
 
 .header{
-    background: radial-gradient(#fff, #ffd6d6);
+    background: radial-gradient(#fff, #3b69ff);
 }
 
 .header .row{
@@ -130,12 +129,12 @@ p{
     margin: 0 auto 80px;
     position: relative;
     line-height: 60px;
-    color: #555;
+    color: darkslategrey;
 }
 
 .title::after{
     content: '';
-    background: #ff523b;
+    background: #3b69ff;
     width: 80px;
     height: 5px;
     border-radius: 5px;
@@ -146,7 +145,7 @@ p{
 }
 
 h4{
-    color: #555;
+    color: darkslategrey;
     font-weight: normal;
 }
 
@@ -155,7 +154,7 @@ h4{
 }
 
 .rating .fa{
-    color: #ff523b;
+    color: orangered;
 }
 
 .col-4:hover{
@@ -165,7 +164,7 @@ h4{
 /*----------------- offer -----------------*/
 
 .offer{
-    background: radial-gradient(#fff, #ffd6d6);
+    background: radial-gradient(#fff, #3b69ff);
     margin-top: 80px;
     padding: 30px 0;   
 }
@@ -210,12 +209,12 @@ small{
 .col-3 p{
     font-size: 12px;
     margin: 12px 0;
-    color: #777;
+    color: grey;
 }
 
 .testimonial h3{
     font-weight: 600;
-    color: #555;
+    color: darkslategrey;
     font-size: 16px;
 }
 
@@ -232,24 +231,24 @@ small{
 .col-5 img{
     width: 100%;
     cursor: pointer;
-    filter: grayscale(100%);
+    transition: transform 1s;
 }
 
 .col-5 img:hover{
-    filter: grayscale(0);
+    transform: translateY(-5px);
 }
 
 /* ---------------- Footer ---------------- */
 
 .footer{
     background: #000;
-    color: #8a8a8a;
+    color: grey;
     font-size: 14px;
     padding: 60px 0 20px;
 }
 
 .footer p{
-    color: #8a8a8a;
+    color: grey;
 }
 
 .footer h3{
@@ -296,7 +295,7 @@ ul{
 
 .footer hr{
     border: none;
-    background: #b5b5b5;
+    background: grey;
     height: 1px;
     margin: 20px 0;
 }
@@ -313,7 +312,7 @@ ul{
 }
 
 select{
-    border: 1px solid #ff523b;
+    border: 1px solid #3b69ff;
     padding: 5px;
 }
 
@@ -327,7 +326,7 @@ select:focus{
 
 .page-btn span{
     display: inline-block;
-    border: 1px solid #ff523b;
+    border: 1px solid #3b69ff;
     margin-left: 10px;
     width: 40px;
     height: 40px;
@@ -337,7 +336,7 @@ select:focus{
 }
 
 .page-btn span:hover{
-    background: #ff523b;
+    background: #3b69ff;
     color: #fff;
 }
 
@@ -378,7 +377,7 @@ select:focus{
     padding-left: 10px;
     font-size: 20px;
     margin-right: 10px;
-    border: 1px solid #ff523b
+    border: 1px solid #3b69ff;
 }
 
 input:focus{
@@ -386,7 +385,7 @@ input:focus{
 }
 
 .single-product .fa{
-    color: #ff523b;
+    color: #3b69ff;
     margin-left: 10px;
 }
 
@@ -420,7 +419,7 @@ th{
     text-align: left;
     padding: 5px;
     color: #fff;
-    background: #ff523b;
+    background: #3b69ff;
     font-weight: normal;
 }
 
@@ -435,7 +434,7 @@ td input{
 }
 
 td a{
-    color: #ff523b;
+    color: #3b69ff;
     font-size: 12px;
 }
 
@@ -451,7 +450,7 @@ td img{
 }
 
 .total-price table{
-    border-top: 3px solid #ff523b;
+    border-top: 3px solid #3b69ff;
     width: 100%;
     max-width: 410px;
 }
@@ -468,7 +467,7 @@ th:last-child{
 
 .account-page{
     padding: 50px 0;
-    background: radial-gradient(#fff, #ffd6d6);
+    background: radial-gradient(#fff, #3b69ff);
 }
 
 .form-container{
@@ -486,7 +485,7 @@ th:last-child{
 .form-container span{
     font-weight: bold;
     padding: 0 10px;
-    color: #555;
+    color: darkslategrey;
     cursor: pointer;
     width: 100px;
     display: inline-block;
@@ -538,7 +537,7 @@ form a{
 #Indicator{
     width: 100px;
     border: none;
-    background: #ff523b;
+    background: #3b69ff;
     height: 3px;
     margin-top: 8px;
     transform: translateX(100px);
@@ -561,7 +560,7 @@ form a{
         position: absolute;
         top: 70px;
         left: 0;
-        background: #333;
+        background: grey;
         width: 100%;
         overflow: hidden;
         transition: max-height 0.5s;
