@@ -705,8 +705,11 @@ form a{
         display: none;
     }
 
-    .slideshow img{
-       max-width: 1400px;
+    .slideshow{
+        margin-left: -90px;
+        margin-right: -75px;
+        margin-bottom: -25px;
+        margin-top: -40px;
     }
 
     .number{
