@@ -31,7 +31,7 @@
                 <a href="cart.html"><img src="./images/cart.png" alt="add to cart" width="30px" height="30px"></a>
                 <img src="./images/menu.png" alt="menu" class="menu-icon" onclick="menutoggle()">
             </div>
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-2">
                     <h1>Give Your Workout<br> A New Style</h1>
                     <p>Success isn't always about greatness. It's about consistency. Consistent<br> hard work gains
@@ -41,9 +41,44 @@
                 <div class="col-2">
                     <img src="./images/image1.png" alt="background">
                 </div>
+            </div> -->
+
+            <div class="slideshow">
+
+                <div class="slides fade">
+                    <div class="number">1 / 4</div>
+                    <img src="./images/page2.jpg" style="width:100%">
+                </div>
+
+                <div class="slides fade">
+                    <div class="number">2 / 4</div>
+                    <img src="./images/page1.jpg" style="width:100%">
+                </div>
+
+                <div class="slides fade">
+                    <div class="number">3 / 4</div>
+                    <img src="./images/page3.jpg" style="width:100%">
+                </div>
+
+                <div class="slides fade">
+                    <div class="number">4 / 4</div>
+                    <img src="./images/page4.jpg" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
             </div>
         </div>
     </div>
+
 
     <!------------------------- Featured Products ----------------------------->
 
@@ -55,7 +90,9 @@
 
             <div class="col-4">
                 <a href="products_detail.html"><img src="./images/product-1.jpg" alt="product 1"></a>
-                <a href="products_detail.html"><h4>Red Printed T-Shirt</h4></a>
+                <a href="products_detail.html">
+                    <h4>Red Printed T-Shirt</h4>
+                </a>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -335,10 +372,18 @@
                 <div class="footer-col-4">
                     <h3>Follow Us</h3>
                     <ul>
-                        <a href="https://www.linkedin.com/in/siddhant-jha-843aa51ab/" target="_blank"><li>LinkedIn</li></a>
-                        <a href="https://twitter.com/_siddhant_15" target="_blank"><li>Twitter</li></a>
-                        <a href="https://www.instagram.com/siddhantjha_/" target="_blank"><li>Instagram</li></a>
-                        <a href="https://www.youtube.com" target="_blank"><li>YouTube</li></a>
+                        <a href="https://www.linkedin.com/in/siddhant-jha-843aa51ab/" target="_blank">
+                            <li>LinkedIn</li>
+                        </a>
+                        <a href="https://twitter.com/_siddhant_15" target="_blank">
+                            <li>Twitter</li>
+                        </a>
+                        <a href="https://www.instagram.com/siddhantjha_/" target="_blank">
+                            <li>Instagram</li>
+                        </a>
+                        <a href="https://www.youtube.com" target="_blank">
+                            <li>YouTube</li>
+                        </a>
                     </ul>
                 </div>
             </div>
@@ -351,20 +396,51 @@
 
     <script>
         var menuitems = document.getElementById("menuitems");
-        
+
         menuitems.style.maxHeight = "0px";
 
-        function menutoggle(){
-            if(menuitems.style.maxHeight == "0px")
-            {
+        function menutoggle() {
+            if (menuitems.style.maxHeight == "0px") {
                 menuitems.style.maxHeight = "200px"
             }
-            else
-            {
+            else {
                 menuitems.style.maxHeight = "0px";
             }
         }
     </script>
+
+    <!--------------- js for slideshow ---------------->
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("slides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+    </script>
+
 </body>
 
 </html>
